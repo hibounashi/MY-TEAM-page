@@ -58,7 +58,6 @@ footer div a{
     text-transform: uppercase;
 }
 .heading p{
-    width: 439px;
     height: 87px;
     flex-shrink: 0;
     color: #000;
@@ -117,6 +116,33 @@ img{
     line-height: normal;
     margin: 20px 0;
 }
-@media   {
+@media   (max-width: 900px){
+    .heading{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        padding: 0px 
+    }
+    .headline1{
+        padding-bottom: 40px;
+    }
+    .headline2{
+        padding: 20px 0;
+    }
+    .container{
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto ;
+        column-gap: 60px;
+    }
+    .card2{
+        padding:0px
+    }
+    .pair-card{
+        padding-top: 40%;
+    }
+    .heading{
+        padding-bottom: 0px;
+    }
     
 }
