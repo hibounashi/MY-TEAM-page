@@ -1,7 +1,18 @@
 body{
-    padding: 50px 150px;
+    padding: 0px 180px;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    flex-shrink: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    padding: 20px;
 }
 footer div{
+    
     color: #BDBDBD;
     text-align: center;
     font-family: Montserrat, sans-serif;
@@ -10,6 +21,12 @@ footer div{
     font-weight: 500;
     line-height: normal;
 }
+footer div a{
+    text-decoration: none; /* Remove underline */
+    color: inherit;
+}
+
+
 .github{
     text-decoration-line: underline;
     font-weight: 700;
@@ -17,16 +34,39 @@ footer div{
 .heading{
     display: flex;
     align-items: start;
+    padding: 60px 20px;
+
 }
 .headline1{
     width: 100%;
     color: #000;
-    font-family: PT, Serif, sans-serif;
+    font-family: PT Serif, sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: -1.62px;
+    
+}
+.headline2 h2{
+    color: #000;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.heading p{
+    width: 439px;
+    height: 87px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 h2{
     margin: 0%;
@@ -34,9 +74,10 @@ h2{
 
 .container{
     display: grid;
-    gap: 10px 50px;
+    gap: 10px 100px;
     grid-template-columns: auto auto auto ;
     grid-template-rows: auto auto ;
+    padding: 40px 20px;
 }
 .card2{
     padding-top: 40%;
@@ -47,16 +88,35 @@ img{
 }
 .card-img p{
     margin: 0;
-    transform:rotate(90deg);
     font-size: smaller;
     white-space: nowrap;
-    position: relative;
-    top: 50%;
-    right: 0%;
-    
+    position: absolute;
+    right: -20px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #000;
+    font-family: PT Serif, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
 
 }
 .card-img{
     display: flex;
     align-items: start;
+    position: relative;
+}
+.card-body h2{
+    color: #000;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 20px 0;
+}
+@media   {
+    
 }
